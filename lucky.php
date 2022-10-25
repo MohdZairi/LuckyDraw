@@ -40,7 +40,7 @@
         <div class="overlay">
             <h1 class="subtitle">Congratulations</h1>
             <div id=nameuser>
-                <h1 class="title">Welcome To Lucky Draw</h1>  
+                
             </div> 
         </div>
     
@@ -64,7 +64,7 @@
             this.responseText;
             }
         };
-        xhttp.open("GET", "showuser.php", true);
+        xhttp.open("GET", "luckydraw.php", true);
         xhttp.send();
         }
         setInterval(function(){
