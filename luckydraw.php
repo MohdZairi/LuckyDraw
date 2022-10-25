@@ -19,7 +19,7 @@ $result = mysqli_query($conn, $sql);
            $name = $row['nama'];
            $noacc = $row['no_akaun'];               
         }    
-        header("Location: lucky.php?name=".$name."&noacc=".$noacc."");
+        header("Location: lucky.php?name=".$name."&noacc=".$noacc."&random=".$randomnum."");
 	} 
     
 ?>

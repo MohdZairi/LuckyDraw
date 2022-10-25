@@ -45,6 +45,9 @@
             <?php if (isset($_GET['noacc'])) { ?>
                 <h1 class="title"><?php echo $_GET['noacc']; ?></h1>
 		    <?php } ?>
+            <?php if (isset($_GET['random'])) { ?>
+                <h1 class="title"><?php echo $_GET['random']; ?></h1>
+		    <?php } ?>
             
         </div>
     
