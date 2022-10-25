@@ -7,7 +7,7 @@
     <meta name="author" content="Devcrud">
     <title>Lucky Draw</title>
     <!-- add icon link -->
-    <link rel = "icon" href ="assets/imgs/MDBG.png">
+    <link rel = "icon" href ="assets/imgs/logo.svg">
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
@@ -19,7 +19,7 @@
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/imgs/MDBG.png" alt="">
+                <img src="assets/imgs/logo.svg" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
