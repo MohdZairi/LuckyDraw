@@ -39,9 +39,13 @@
     <header class="header">
         <div class="overlay">
             <h1 class="subtitle">Congratulations</h1>
-            <div id=nameuser>
-                
-            </div> 
+            <?php if (isset($_GET['name'])) { ?>
+                <h1 class="subtitle"><?php echo $_GET['name']; ?></h1>
+		    <?php } ?>
+            <?php if (isset($_GET['noacc'])) { ?>
+                <h1 class="title"><?php echo $_GET['noacc']; ?></h1>
+		    <?php } ?>
+            
         </div>
     
         <div class="shape">
@@ -49,28 +53,21 @@
                 <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
             </svg>
         </div> 
-        <div class="mouse-icon"><div class="wheel"></div></div>
+        
+        <form action= "luckydraw.php"  onsubmit="return luckydraw()">
+            <button><div class="mouse-icon"><div class="wheel"></div></div></button>
+        </form>
         
         
     </header>
     <!-- End Of Page Header -->
 
+
     <script>
         function luckydraw() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("nameuser").innerHTML =
-            this.responseText;
-            }
-        };
-        xhttp.open("GET", "luckydraw.php", true);
-        xhttp.send();
+            return true;
         }
-        setInterval(function(){
-            luckydraw();
-            // 1sec
-        },1000);     
+
     </script>
 
 	
