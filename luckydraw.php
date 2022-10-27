@@ -9,7 +9,7 @@ $result = mysqli_query($conn, $sql);
         $numrow = mysqli_num_rows($result);
 
         $row = mysqli_fetch_assoc($result);
-        $randomnum= rand(1,500);
+        $randomnum= rand(1,$numrow);
 
         $sql2 = "SELECT * FROM contestant where id='$randomnum' ";
         $result2 = mysqli_query($conn, $sql2);
